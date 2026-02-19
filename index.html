@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optimum Human Order – Winns Scofield</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f5f5f5; padding: 20px; display: flex; justify-content: center; }
+        .order-card { max-width: 600px; background: white; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px; }
+        .header { display: flex; align-items: center; gap: 15px; border-bottom: 1px solid #eee; padding-bottom: 15px; margin-bottom: 20px; }
+        .logo { width: 60px; height: 60px; background: #ddd; border-radius: 8px; background-size: contain; background-repeat: no-repeat; background-position: center; }
+        .company-name { font-size: 20px; font-weight: bold; color: #333; }
+        h2 { font-size: 18px; color: #444; margin: 20 0 15px; border-left: 4px solid #2a7f62; padding-left: 10px; }
+        .product-item { display: flex; gap: 15px; margin-bottom: 20px; align-items: center; }
+        .product-image { width: 80px; height: 80px; background: #f0f0f0; border-radius: 8px; background-size: cover; background-position: center; }
+        .product-info { flex: 1; }
+        .product-name { font-weight: bold; font-size: 16px; }
+        .product-variant { font-size: 14px; color: #666; }
+        .product-price-qty { display: flex; justify-content: space-between; font-size: 15px; }
+        .price { color: #2a7f62; font-weight: 600; }
+        .subtotal-line { display: flex; justify-content: space-between; padding: 8px 0; }
+        .total-line { display: flex; justify-content: space-between; font-weight: bold; font-size: 18px; border-top: 2px solid #eee; padding-top: 12px; margin-top: 8px; }
+        .shipping-line { border-top: 1px dashed #ccc; margin-top: 8px; padding-top: 8px; }
+        .footer { margin-top: 25px; font-size: 14px; color: #777; text-align: center; border-top: 1px solid #eee; padding-top: 15px; }
+        .address-block { background: #f9f9f9; padding: 12px; border-radius: 8px; margin: 20px 0; }
+    </style>
+</head>
+<body>
+    <div class="order-card">
+        <div class="header">
+            <!-- Logo -->
+            <div class="logo" style="background-image: url('https://raw.githubusercontent.com/hynes-summerville/Supplements--order/main/IMG-20260219-WA0014.jpg');"></div>
+            <div class="company-name">Optimum Human</div>
+        </div>
+
+        <!-- Shipping Address -->
+        <div class="address-block">
+            <strong>Ship to:</strong><br>
+            Winns Scofield<br>
+            Miracle Mail Print and Business Center<br>
+            5850 W 3rd St E<br>
+            Los Angeles, CA 90036<br>
+            United States
+        </div>
+
+        <h2>Order Summary</h2>
+
+        <!-- Methylene Blue -->
+        <div class="product-item">
+            <div class="product-image" style="background-image: url('https://raw.githubusercontent.com/hynes-summerville/Supplements--order/main/IMG-20260218-WA0024.jpg');"></div>
+            <div class="product-info">
+                <div class="product-name">USP Methylene Blue</div>
+                <div class="product-variant">Capsules, 3 bottles</div>
+                <div class="product-price-qty">
+                    <span class="price">$30.00 each</span>
+                    <span>Qty: 3</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- L-Ergothioneine -->
+        <div class="product-item">
+            <div class="product-image" style="background-image: url('https://raw.githubusercontent.com/hynes-summerville/Supplements--order/main/IMG-20260218-WA0025.jpg');"></div>
+            <div class="product-info">
+                <div class="product-name">Tonic L-Ergothioneine</div>
+                <div class="product-variant">25mg Capsules, 4 bottles</div>
+                <div class="product-price-qty">
+                    <span class="price">$20.00 each</span>
+                    <span>Qty: 4</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Totals -->
+        <div class="subtotal-line"><span>Subtotal (Methylene Blue):</span><span>$90.00</span></div>
+        <div class="subtotal-line"><span>Subtotal (L-Ergothioneine):</span><span>$80.00</span></div>
+        <div class="subtotal-line shipping-line"><span>Shipping:</span><span>$40.00</span></div>
+        <div class="total-line"><span>Total (USD):</span><span>$210.00</span></div>
+
+        <div class="footer">
+            Thank you, Winns! Your order from Optimum Human is confirmed.<br>
+            You’ll receive a tracking link once shipped.
+        </div>
+    </div>
+</body>
+</html>
